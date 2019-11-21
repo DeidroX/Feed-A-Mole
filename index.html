@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feed-A-Mole Game</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <section class="rules">
+        <h1>Feed-A-Mole</h1>
+        <p>A game based on <a target="_blank" href="https://frontendmasters.github.io/bootcamp/mole">Frontend Masters Bootcamp</a>. I did not invent this. I tweaked it a little bit and coded 95% of it by myself without using the solution of Frontend Masters. I created this for learning purposes. The artwork in here belongs to
+        <a target="_blank" href="https://www.pickledalice.com/">Alice Brereton</a><br><br>Tipp: <span>Best experience with a screen resolution of 1920 x 1080. Otherwise just zoom a little bit out inside your browser.</span><br><br>Recommended Browsers: <span>Newest versions of <a target="_blank" href="https://www.mozilla.org/de/firefox/new/">Mozilla Firefox</a> or <a target="_blank" href="https://www.google.com/intl/de_de/chrome/">Google Chrome</a>.</span></p>
+        <h2>Rules</h2>
+        <p>The idea is that little moles will pop out of holes and the goal is to tap them before they go back in their holes. In this variant, they're hungry little star moles and you're going to feed them worms! After you get 20 points, you win the game! There are also more-rare royal star moles that are worth double points. If you don't click on a mole in time, the mole frowns and heads back in its hole. If you manage to feed it in time, it smiles happily and dissapears back into its hole and you get points. Have fun!</p>
+        <button class="start-button">- START -</button>
+    </section>
+    <section class="background">
+        <div class="rows">
+            <div class="worm-box" style="width: 2.5%">
+                <img src="./images/worm.png" alt="A worm" class="worm">
+            </div>
+        </div>
+        <div class="rows">
+            <div class="holes"><img src="./images/mole-hungry.png" alt="A Mole" class="mole"></div>
+            <div class="holes"><img src="./images/king-mole-hungry.png" alt="A Mole" class="mole"></div>
+            <div class="holes"><img src="./images/king-mole-hungry.png" alt="A Mole" class="mole"></div>
+            <div class="holes"><img src="./images/mole-hungry.png" alt="A Mole" class="mole"></div>
+        </div>
+        <div class="rows">
+            <div class="holes"><img src="./images/mole-hungry.png" alt="A Mole" class="mole"></div>
+            <div class="holes"><img src="./images/mole-hungry.png" alt="A Mole" class="mole"></div>
+            <div class="holes"><img src="./images/mole-hungry.png" alt="A Mole" class="mole"></div>
+            <div class="holes"><img src="./images/king-mole-hungry.png" alt="A Mole" class="mole"></div>
+        </div>
+        <div class="rows">
+            <div class="holes"><img src="./images/mole-hungry.png" alt="A Mole" class="mole"></div>
+            <div class="holes"><img src="./images/king-mole-hungry.png" alt="A Mole" class="mole"></div>
+        </div>
+    </section>
+    <section class="win-state hidden">
+        <img src="./images/win.png" alt="Winning screen">
+    </section>
+    <script src="./js/game.js"></script>
+</body>
+</html>
